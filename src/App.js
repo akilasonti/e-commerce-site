@@ -14,10 +14,12 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={ProductList} />
+        {/* <Route exact path="/" component={ProductList} /> */}
         <Route exact path="/e-commerce-site" component={ProductList} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
+        <Route path='/' element={<Navigate to='/e-commerce-site' />} />
+        <Route path='*' element={<Navigate to='/e-commerce-site' />} />
         <Route component={ProductList} />
       </Switch>
       <Modal />
