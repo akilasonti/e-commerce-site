@@ -18,7 +18,7 @@ export default class Navbar extends Component {
                     </Link>
                  </li>
 
-                 <li className="nav-item ml-5">
+                 {/* <li className="nav-item ml-5">
                     <Link to="/" className="nav-link">
                        Man
                     </Link>
@@ -28,7 +28,7 @@ export default class Navbar extends Component {
 <Link to="/" className="nav-link">
    Women
 </Link>
-</li>
+</li> */}
                </ul>
                <Link to="/cart" className="ml-auto">
                   <ButtonContainer>
